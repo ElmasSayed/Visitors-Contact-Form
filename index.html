@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MGA Entertainment Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+</head>
+
+<body>
+    <div class="container-fluid mainContainer">
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+
+            <div class="col-md-4" id="formContainer">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="row">
+                            <div class="col-md-12 blue1">
+                                <div class="col-md-11"></div>
+                                <div class="col-md-1 close_icon">X</div>
+                            </div>
+                            <div class="col-md-12 blue2">
+                            </div>
+                        </div>
+
+                        <div class="imgContainer">
+                            <img alt="MGA Entertainment" src="assets/images/mga_logo.png" class="mga_logo" />
+                        </div>
+                    </div>
+
+                    <div id="formArea">
+                        <p id="para">
+                            <strong>Please fill out the following fields to contact MGA Entertainment</strong>
+                        </p>
+
+
+                        <form>
+
+                            <div class="form-group">
+                                <label for="fullName">
+                                    Full Name:*
+                                </label>
+                                <input id="name" type="text" class="form-control required" placeholder="John Doe" />
+                                <img src="assets/images/name_icon.png" class="name_icon" />
+                                <img id="name_error_ico" class="ico_error" src="assets/images/warning_icon.png" />
+                                <div id="name_error_msg" class="val_error">Full Name is a required field.</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">
+                                    Mobile Phone Number:*
+                                </label>
+                                <input id="phone" type="text" class="form-control required" placeholder="ex: 123-123-1234"> <!--pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"-->
+                                <img id="phone_icon" class="phone_icon" src="assets/images/phone_icon.png" />
+                                <img id="phone_error_ico" class="ico_error" src="assets/images/warning_icon.png" />
+                                <div id="phone_error_msg" class="val_error">Mobile number is a required field.</div>
+                                <div id="phone_error_msg2" class="val_error">Please enter a valid phone number.</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="state">
+                                    State:*
+                                </label>
+                                <br>
+                                <select class="form-control  required" id="state">
+                                    Select One
+                                    <option value="" selected="selected">Select one </option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District Of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                                <img id="state_error_ico" class="ico_error" src="assets/images/warning_icon.png" />
+                                <div id="state_error_msg" class="val_error">State is a required field.</div>
+
+                                <!-- California question-->
+                                <div id="div_california_question" class="form-group">
+                                    <label for="california_question">
+                                        Was your item purchased in CA?:<span>*</span>
+                                    </label>
+                                    <br>
+                                    <select class="form-control required" id="california_question">
+                                        Select One
+                                        <option selected="selected" value="">Select one</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                        <option value="dontknow">Don't Know</option>
+                                    </select>
+                                    <img id="california_question_error_ico" class="ico_error" src="assets/images/warning_icon.png" />
+                                    <div id="california_question_error_msg" class="val_error">Select One</div>
+
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-group required">
+                                    <label for="question">
+                                        Describe your question:*
+                                    </label>
+                                    <br>
+                                    <textarea rows="5" cols="50" class="form-control" id="question"></textarea>
+                                    <img id="question_error_ico" class="ico_error pushup" src="assets/images/warning_icon.png" />
+                                    <div id="question_error_msg" class="val_error">Description is a required field.</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <button type="submit" value="Submit" class="btn btn-default btn-primary btn-lg" id="button">Submit</button>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12" style="margin-top:4px;"><div style="float:right"><span class="aster">*</span> Required field</div></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/logic.js"></script>
+</body>
+</html>

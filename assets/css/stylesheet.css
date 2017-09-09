@@ -1,0 +1,144 @@
+input[type=text]:focus {
+    background: #cfebf9;
+}
+
+textarea:focus {
+    background: #cfebf9;
+}
+
+select:focus {
+    background: #cfebf9;
+}
+
+.mainContainer {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: Helvetica;
+}
+
+.blue1 {
+    background-color: #21a5e3;
+    height: 75px;
+    border-top-left-radius: 15px;
+}
+
+.close_icon {
+    color: white;
+    padding-top: 9px;
+    float: right;
+    font-size: 22px;
+    font-family:Verdana;
+    font-weight:700;
+}
+
+.blue2 {
+    background-color: #1474a0;
+    height: 20px;
+}
+
+.mga_logo {
+    height: 130px;
+    width: 130px;
+    margin-top: -92px;
+    position: relative;
+    z-index: 100;
+}
+
+.imgContainer {
+    text-align: center;
+}
+
+#formContainer {
+    border: .5px solid;
+    border-color: gray;
+    border-top-left-radius: 15px;
+    padding-bottom: 15px;
+}
+
+#para {
+    font-size: 23px;
+    padding-bottom: 3px;
+    padding-left:5px;
+}
+
+#formArea {
+    margin: 25px;
+    min-height: 650px;
+}
+
+#thanks {
+    font-size: 24px;
+    font-weight: bolder;
+    padding-bottom: 3px;
+    padding-left:5px;
+}
+
+#name {
+    padding-left: 47px;
+    font-size: 18px;
+}
+
+.name_icon {
+    margin-top: -60px;
+    margin-left: 7px;
+}
+
+#phone {
+    padding-left: 47px;
+    font-size: 16px;
+}
+
+.phone_icon {
+    margin-top: -60px;
+    margin-left: 7px;
+}
+
+#state {
+    width: 100%;
+}
+
+#question {
+    width: 100%;
+}
+
+#div_california_question {
+    padding-top:15px;
+}
+
+#button {
+    background-color: #21a5e3;
+    float: right;
+    width: 50%;
+    height: 39px;
+    margin-top: 20px;
+    font-size: 25px;
+    line-height: 0px;
+    transition: 1s;
+}
+
+.aster {
+    color: red;
+}
+
+/*validation */
+.ico_error {
+    float: right;
+    font-size: 1.0em;
+    margin-top: -25px;
+    margin-right: 20px;
+    line-height: 0px;
+    color: red;
+}
+
+.val_error {
+    float: right;
+    font-size: 1.0em;
+    margin-top: 10px;
+    line-height: 0px;
+    color: red;
+}
+
+
+.pushup{
+    margin-top:-100px;
+}
