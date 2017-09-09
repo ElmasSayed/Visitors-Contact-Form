@@ -1,21 +1,29 @@
+
 $(document).ready(function () {
 
+    // Hide pre-defined warning icon and error messages 
     $(".ico_error").hide();
     $(".val_error").hide();
+    // Hide CA additional question
     $("#div_california_question").hide();
 
+    // Submit Form
     $("form").submit(function (e) {
 
+        // Prevent from submitting the form
         e.preventDefault();
 
+        // Hide pre-defined warning icon and error messages
         $(".ico_error").hide();
         $(".val_error").hide();
+        // Restore background color of inputs
         $("#name").css('background-color', 'white');
         $("#phone").css('background-color', 'white');
         $("#state").css('background-color', 'white');
         $("#california_question").css('background-color', 'white');
         $("#question").css('background-color', 'white');
 
+        // Start Validating form inputs
         var isAllDataValidated = true;
 
         if ($("#name").val() === "") {
@@ -71,6 +79,7 @@ $(document).ready(function () {
             $("#question_error_msg").show(800);
         }
 
+        // Show thank you message when validations are successful
         if (isAllDataValidated==true) {
             //make an api call here to save data in database and catch the error message if any
             $("#formArea").html("<span id='thanks'>Thank you!<br>We received your message and will reach out to you as soon as humanly possible </span>");
@@ -80,11 +89,14 @@ $(document).ready(function () {
 
     });
 
-    // On change of state dropdown- Selecting California state.
+    // On change of state dropdown
     $('#state').change(function () {
+
         $("#state").css('background-color', 'white');
         $("#state_error_ico").hide();
         $("#state_error_msg").hide();
+
+        // Show additional question when state selected is CA
         if ($(this).val() === "CA") {
             $("#div_california_question").show(500);
         }
