@@ -23,6 +23,12 @@ $(document).ready(function () {
         $("#california_question").css('background-color', 'white');
         $("#question").css('background-color', 'white');
 
+        $("#name").css('border-color', 'lightgray');
+        $("#phone").css('border-color', 'lightgray');
+        $("#state").css('border-color', 'lightgray');
+        $("#california_question").css('border-color', 'lightgray');
+        $("#question").css('border-color', 'lightgray');
+
         // Start Validating form inputs
         var isAllDataValidated = true;
 
